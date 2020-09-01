@@ -25,7 +25,7 @@ describe 'form' do
   it 'shows a new form that submits content and redirects and prints out params' do
     visit new_article_path
 
-    fill_in 'title', with: "title"
+    fill_in 'title', with: ""
     fill_in 'description', with: "description"
 
     click_on "Submit Article"
