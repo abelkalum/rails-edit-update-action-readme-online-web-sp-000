@@ -1,9 +1,9 @@
 <%= form_tag article_path(@article), method: "put" do %>
-  <label>Post title:</label><br>
-  <%= text_field_tag :title, @post.title %><br>
+  <label>Article title:</label><br>
+  <%= text_field_tag :title, @article.title %><br>
 
-  <label>Post Description</label><br>
-  <%= text_area_tag :description, @post.description %><br>
+  <label>Article Description</label><br>
+  <%= text_area_tag :description, @article.description %><br>
 
-  <%= submit_tag "Submit Post" %>
+  <%= submit_tag "Submit Article" %>
 <% end %>
