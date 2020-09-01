@@ -1,4 +1,4 @@
-<%= form_tag article_path(@article), method: "put" do %>
+<%= form_tag article_path(@article), method: "patch" do %>
   <label>Article title:</label><br>
   <%= text_field_tag :title, @article.title %><br>
 
